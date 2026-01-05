@@ -47,7 +47,7 @@ Créer un menu permettant de :
 - `split("\\s+")` pour compter les mots  
 
 **Exécution :**  
-![Exécution Exercice 3](execpics/exec3.png)
+![Exécution Exercice 3](execpics/exec31.png)(execpics/exec32.png)
 
 ---
 

@@ -1,0 +1,63 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+import java.util.Scanner;
+
+public class StringMenuApp {
+   public StringMenuApp() {
+   }
+
+   public static void main(String[] var0) {
+      Scanner var1 = new Scanner(System.in);
+      String var2 = "";
+
+      int var3;
+      do {
+         System.out.println("\n===== MENU =====");
+         System.out.println("1. Enter a string");
+         System.out.println("2. Display the string");
+         System.out.println("3. Reverse the string");
+         System.out.println("4. Number of words");
+         System.out.println("0. Exit");
+         System.out.print("Your choice: ");
+         var3 = var1.nextInt();
+         var1.nextLine();
+         switch (var3) {
+            case 0:
+               System.out.println("Program ended.");
+               break;
+            case 1:
+               System.out.print("Enter a string: ");
+               var2 = var1.nextLine();
+               break;
+            case 2:
+               System.out.println("String: " + var2);
+               break;
+            case 3:
+               String var4 = (new StringBuilder(var2)).reverse().toString();
+               System.out.println("Reversed string: " + var4);
+               break;
+            case 4:
+               int var5 = countWords(var2);
+               System.out.println("Number of words: " + var5);
+               break;
+            default:
+               System.out.println("Invalid choice.");
+         }
+
+         if (var3 != 0) {
+            System.out.println("Press Enter to return to the menu...");
+            var1.nextLine();
+         }
+      } while(var3 != 0);
+
+      var1.close();
+   }
+
+   public static int countWords(String var0) {
+      if (var0 != null && !var0.trim().isEmpty()) {
+         String[] var1 = var0.trim().split("\\s+");
+         return var1.length;
+      } else {
+         return 0;
+      }
+   }
+}
