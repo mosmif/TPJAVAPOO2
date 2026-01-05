@@ -1,65 +1,115 @@
-# Devoir : Strings, Arrays et OOP en Java
+<div align="center">
 
-**Auteur : Mustapha Elmifdali (SDIA-M1)**
+# 📘 **Devoir Java**
+## 🧵 *Strings • Arrays • OOP*
 
-## Exercice 1 : Gestion des notes des étudiants
-**Problème :**  
-Stocker les notes des étudiants dans un tableau, puis effectuer plusieurs opérations :  
-- Trier les notes  
-- Calculer la moyenne  
-- Trouver la note la plus haute et la plus basse  
-- Compter le nombre d’étudiants ayant une note spécifique  
+👤 **Auteur : Mustapha Elmifdali**  
+🎓 **Filière : SDIA – M1**  
+💻 **Langage : Java**
 
-**Solution :**  
-- Utilisation d’un tableau `int[] grades`  
-- Méthode `Arrays.sort()` pour le tri  
-- Boucles pour la moyenne, le min/max et le comptage  
-
-**Exécution :**  
-![Exécution Exercice 1](execpics/exec1.png)
+</div>
 
 ---
 
-## Exercice 2 : Conjugaison d’un verbe du premier groupe
-**Problème :**  
-Lire un verbe régulier en `-er` et afficher sa conjugaison au présent.  
-
-**Solution :**  
-- Vérifier que le verbe se termine par `-er`  
-- Extraire le radical et ajouter les terminaisons correspondantes  
-
-**Exécution :**  
-![Exécution Exercice 2](execpics/exec2.png)
+## 🧩 **Sommaire**
+- 📊 Exercice 1 : Gestion des notes
+- ✍️ Exercice 2 : Conjugaison
+- 🔁 Exercice 3 : Chaînes de caractères
+- 🔤 Exercice 4 : Comptage des lettres
 
 ---
 
-## Exercice 3 : Opérations sur une chaîne de caractères
-**Problème :**  
-Créer un menu permettant de :  
-- Entrer une chaîne  
-- Afficher la chaîne  
-- Inverser la chaîne  
-- Compter le nombre de mots  
+## 📊 **Exercice 1 — Gestion des notes des étudiants**
 
-**Solution :**  
-- Utilisation de `Scanner` pour la saisie  
-- `StringBuilder` pour inverser  
-- `split("\\s+")` pour compter les mots  
+> 🎯 **Objectif**  
+Gérer les notes des étudiants à l’aide d’un tableau et effectuer plusieurs traitements.
 
-**Exécution :**  
-![Exécution Exercice 3 part 1](execpics/exec31.png)
-![Exécution Exercice 3 part 2](execpics/exec32.png)
+### 🛠️ Fonctionnalités
+| ✔ | Opération |
+|---|----------|
+| 🔢 | Stockage des notes |
+| 📈 | Tri des notes |
+| 📊 | Calcul de la moyenne |
+| 🏆 | Note max & min |
+| 🔍 | Comptage d’une note donnée |
+
+### ⚙️ Solution technique
+- Tableau : `int[] grades`
+- Tri : `Arrays.sort()`
+- Boucles pour calculs statistiques
+
+### ▶️ Exécution
+<p align="center">
+  <img src="execpics/exec1.png" width="600">
+</p>
 
 ---
 
-## Exercice 4 : Comptage des lettres
-**Problème :**  
-Compter le nombre d’occurrences de chaque lettre (insensible à la casse) dans une chaîne.  
+## ✍️ **Exercice 2 — Conjugaison d’un verbe du 1er groupe**
 
-**Solution :**  
-- Tableau `int[26]` pour chaque lettre  
-- Conversion de la chaîne en majuscules  
-- Boucle pour compter les lettres  
+> 🎯 **Objectif**  
+Conjuguer un verbe régulier en **-er** au présent de l’indicatif.
 
-**Exécution :**  
-![Exécution Exercice 4](execpics/exec4.png)
+### 🛠️ Étapes
+- Vérification de la terminaison `-er`
+- Extraction du radical
+- Ajout des terminaisons :
+  - `e`, `es`, `e`, `ons`, `ez`, `ent`
+
+### ▶️ Exécution
+<p align="center">
+  <img src="execpics/exec2.png" width="600">
+</p>
+
+---
+
+## 🔁 **Exercice 3 — Opérations sur une chaîne de caractères**
+
+> 🎯 **Objectif**  
+Créer un menu interactif pour manipuler une chaîne de caractères.
+
+### 🧩 Menu proposé
+| Option | Action |
+|------|--------|
+| 1️⃣ | Entrer une chaîne |
+| 2️⃣ | Afficher la chaîne |
+| 3️⃣ | Inverser la chaîne |
+| 4️⃣ | Compter les mots |
+
+### ⚙️ Solution technique
+- `Scanner` pour la saisie
+- `StringBuilder.reverse()`
+- `split("\\s+")` pour les mots
+
+### ▶️ Exécution
+<p align="center">
+  <img src="execpics/exec31.png" width="600"><br>
+  <img src="execpics/exec32.png" width="600">
+</p>
+
+---
+
+## 🔤 **Exercice 4 — Comptage des lettres**
+
+> 🎯 **Objectif**  
+Compter les occurrences de chaque lettre **sans tenir compte de la casse**.
+
+### ⚙️ Solution technique
+- Tableau : `int[26]`
+- Conversion en majuscules
+- Parcours caractère par caractère
+
+### ▶️ Exécution
+<p align="center">
+  <img src="execpics/exec4.png" width="600">
+</p>
+
+---
+
+<div align="center">
+
+### ✅ **Fin du devoir**
+Merci pour la lecture 🙌  
+⭐ N’hésitez pas à laisser une étoile sur le dépôt GitHub !
+
+</div>
